@@ -1,0 +1,33 @@
+class tea:
+    def teaorder(self):
+        t=int(input("enter the number of cup of tea="))
+        sugar=int(input("enter the amount of sugar="))
+        teaamnt=int(input("enter the amount of tea="))
+        print("your tea is ready!!!!!")
+        bill=0
+        bill=bill+t*0.5
+        print("Total bill=",bill,"$")
+class cofforder:
+    def cofforder(self):
+        c=int(input("enter the number of cup of tea="))
+        sugar=int(input("enter the amount of sugar="))
+        caffine=int(input("enter the amount of caffine="))
+        print("Your coffee is ready!!!!!!!!!")
+        bill=0
+        bill=bill+c*1
+        print("Total bill=",bill,"$")
+
+print("Mr X Restaurant")
+print("Coffee and Tea Vending Machine:-")
+print("Cost of Tea and Coffee:-")
+print("1 cup of Tea= 0.5$")
+print("1 cup of Coffee=1$")
+print("1- Tea")
+print("2- Coffee")
+ch=int(input("Enter the choice ="))
+if ch==1:
+    temp=tea()
+    temp.teaorder()
+if ch==2:
+    temp1=coffee()
+    temp1.cofforder()
